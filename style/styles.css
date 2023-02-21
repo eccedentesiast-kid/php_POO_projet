@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url("reset.css");
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    padding: 50px;
+    background: linear-gradient(to right, #8e8ed1, #e608ba);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+div#menu ul {
+    list-style-type: none;
+    width: 840px;
+    margin: 0 auto;
+    padding: 0px;
+    padding-bottom: 90px;
+}
+div#menu ul li {/*border:1px solid black;*/
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 150px;
+    float: left;
+    text-align: center;
+    position: relative;
+    margin: 30px;
+    margin-top: 0px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, .5);
+}
+div#menu a {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+div#menu a:hover {
+    color:red;
+}
+div#menu ul li:hover {
+    background-color:white;
+}
+
+#title {
+    color: rgb(0, 0, 0);
+}
+
+label {
+    display: inline-block;
+    width: 170px;
+}
+
+.entrer-form {
+    width: 590px;
+    background: rgba(255, 255, 255, .5);
+    padding: 4rem;
+    border-radius: 10px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.entrer-form::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, .15);
+    transform: rotate(-6deg);
+    border-radius: 10px;
+    z-index: -1;
+}
+
+/* Entrer form logo */
+.entrer-form-logo {
+    margin-bottom: 2rem;
+}
+
+.entrer-form-logo img {
+    width: 60px;
+}
+/* ---------- */
+
+/*Entrer form Standard */
+.entrer-form-logo,
+.entrer-form-header {
+    text-align: center;
+}
+
+.entrer-form-header {
+    margin-bottom: 2rem;
+}
+
+.entrer-form-header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.entrer-form-header h1 + div {
+    font-size: calc(1rem * .8);
+}
+/* ---------- */
+
+/* Entrer form - FORM */
+#form1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#form1 .form-item {
+    position: relative;
+}
+
+#form1 .form-item label {
+    position: absolute;
+    top: .75rem;
+    left: 1.4rem;
+    font-size: 1rem;
+    opacity: .4;
+}
+
+/* Login Card Form Elements */
+.entrer-form input[type="text"] {
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, .3);
+    padding: 1rem 1.5rem;
+    padding-left: calc(1rem * 12);
+    border-radius: 100px;
+    width: 100%;
+    transition: background .5s;
+}
+
+.entrer-form input:focus {
+    background: white;
+}
+
+.entrer-form input[type="submit"] {
+    background: black;
+    color: white;
+    padding: 1rem;
+    border-radius: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background .5s;
+}
+
+.entrer-form input[type="submit"]:hover {
+    background-color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+}
